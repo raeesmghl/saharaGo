@@ -1,0 +1,126 @@
+.hero-section {
+    width: 100%;
+    max-width: 1366px;
+    height: max(90%, 600px);
+    margin: 50px auto;
+}
+
+.hero-section video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: max(90%,600px);
+    width: 100%;
+    z-index: -1;
+    object-fit: cover;
+}
+
+.screen {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 100px;
+
+    background-position: center;
+    background-size: cover;
+}
+
+.screen .content {
+    /* max-width: 50%; */
+    text-transform: capitalize;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    color: var(--black);
+}
+
+.screen .content h1 {
+    font-size: 40px;
+    line-height: 50px;
+}
+
+.screen .content p {
+    font-size: 16px;
+}
+
+.screen .content .booking-btn {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--brown);
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: var(--white);
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.screen .content .booking-btn i {
+    font-size: 20px;
+}
+
+.screen .content .booking-btn p {
+    font-size: 16px;
+}
+
+
+.screen .social-media-icons{
+    font-size: 32px;
+    display: flex;
+    gap: 20px;
+}
+.screen .social-media-icons i{
+    transition: .5s;
+    cursor: pointer;
+    color: var(--white);
+}
+.screen .social-media-icons i:hover{
+    color: black;
+}
+
+
+
+
+@media screen and (max-width : 600px) {
+    .screen {
+        padding: 0 50px;
+        background-position: top left;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .screen .content {
+        gap: 50px;  
+        align-items: center;
+    }
+
+    .screen .content h1 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .screen .content p {
+        font-size: 16px;
+    }
+
+    .screen .content .booking-btn i {
+        font-size: 12px !important;
+        text-wrap: nowrap;
+    }
+
+    .screen .content .booking-btn p {
+        font-size: 12px !important;
+        text-wrap: nowrap;
+    }
+    
+.screen .social-media-icons{
+    font-size: 24px;
+    gap: 14px;
+}
+
+
+}
