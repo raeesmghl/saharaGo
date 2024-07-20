@@ -1,0 +1,119 @@
+
+.tour-type-section{
+    padding: 80px 100px;
+    max-width: 1366px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+    background-color: black;
+    color: white;
+
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+
+.tour-type-section .text-content {
+    text-align: center;
+
+}
+
+.tour-type-section .text-content>h4 {
+    font-family: "Dancing Script", cursive;
+    font-size: 28px;
+    text-transform: capitalize;
+    color: var(--brown);
+
+}
+
+.tour-type-section .text-content>h1 {
+    font-size: 45px;
+    text-transform: capitalize;
+}
+
+
+
+
+
+
+
+.tour-type-section .types-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 90px;
+}
+
+.tour-type-section .types-container .type{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.tour-type-section .types-container .type>img{
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+}
+
+
+
+.tour-type-section .types-container .type h4{
+    font-size: 14px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+}
+
+
+
+@media screen and (max-width: 980px) {
+    .tour-type-section .types-container{
+        grid-template-columns: 1fr 1fr;
+        
+    }
+    .tour-type-section .types-container .type{
+        max-width: 300px;
+    }
+}
+
+@media screen and (max-width: 634px) {
+    .tour-type-section{
+        padding: 80px 50px;
+    }
+    .tour-type-section .types-container{
+        grid-template-columns: 1fr;
+        
+    }
+    .tour-type-section .types-container .type{
+        max-width: 300px;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .tour-type-section .text-content h4 {
+        font-size: 20px;
+    }
+
+    .tour-type-section .text-content h1 {
+        font-size: 32px;
+    }
+
+}
+
+
+@media screen and (max-width: 370px) {
+   
+
+    .tour-type-section .text-content h1 {
+        font-size: 28px;
+    }
+
+    .tour-type-section {
+        padding: 80px 10px;
+    }
+
+}
