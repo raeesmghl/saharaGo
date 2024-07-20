@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+:root{
+    --brown: #B8844E;
+    --white: #fff;
+    --black : #000;
+}
+
+a{
+    text-decoration: none;
+    color: var(--black);
+}
+
+
+
+header{
+    width: 100%;
+    /* background-color: aqua; */
+    background-color: var(--white);
+    position: absolute;
+    top: 0;
+    left: 50%;
+    translate: -50%;
+    z-index: 999;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all .5s ease;
+    max-width: 1366px;
+    background-color: var(--white);
+}
+
+
+
+.brand{
+    color: var(--brown);
+    font-size: 20px;
+    font-weight: 600;
+    transition: .5s ease;
+
+}
+
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    text-wrap: nowrap;
+    /* background-color: red; */
+
+}
+
+.navigation-items{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 0 0 0 40px;
+    /* background-color: red; */
+
+}
+
+.navigation-items >a{
+    position: relative;
+}
+.navigation-items >a::after{
+    content: '';
+    
+    position: absolute;
+    top: 105%;
+    left: 0;
+    
+    height: 2px;
+    /* width: 100%; */
+    width: 0;
+    background-color: var(--black);
+
+    transition: .5s ease; 
+
+}
+
+.navigation-items >a:hover::after{
+    width: 100%;
+}
+
+.active{
+    color: var(--brown);
+}
+.active::after{
+    /* content: ''; */
+    width: 100% !important;
+    background-color: var(--brown) !important;
+}
+
+
+
+.navigation-buttons{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    /* background-color: blue; */
+}
+
+.navigation-buttons > div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 20px;
+    /* background-color: purple; */
+    border-radius: 12px;
+    text-transform: capitalize;
+    font-weight: 600;
+    cursor: pointer;
+    
+}
+
+.phone-no{
+    color: var(--black);
+}
+.online-booking{
+    background-color: var(--brown);
+    color: white;
+}
+
+
+header i{
+    font-size: 24px;
+    font-weight: 800;
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width : 1200px) {
+    .navigation-buttons{
+        display: none;
+    }
+    .navigation{
+        justify-content: center;
+       
+    }
+    .navigation-items{
+        padding: 0 0 0 80px;
+    }
+}
+
+
+@media screen and (max-width : 850px) {
+    header{
+        padding: 20px 50px;
+    }
+    .navigation-items{
+        padding: 0 0 0 40px;
+    }
+}
+
+
+
+@media screen and (max-width : 680px) {
+    
+    .navigation{
+        display: none;
+        position: absolute;
+        top: 100px;
+        left: 50%;
+        translate: -50%;
+
+        width: auto;
+
+        border-radius: 10px;
+        overflow: hidden;
+        border: 2px solid;
+        background-color: var(--white);
+    }
+
+    .navigation-items{
+        flex-direction: column;
+        padding: 0;
+        gap: 10px;
+    }
+    .navigation-items a{
+        width: 100%;
+        padding: 10px 80px;
+        text-align: center;
+        font-weight: 600;
+        text-transform: capitalize;
+    }
+    .navigation-items a:hover:not(.active){
+        background-color: rgba(0, 0, 0,.1);
+    }
+
+    header{
+        gap: 50px;
+        justify-content: space-around;
+    }
+    header i{
+        display: block;
+    }
+    header #close-btn{
+        display: none;
+    }
+
+
+    .active{
+        color: var(--white);
+        background-color: var(--black);
+    }
+    .active::after{
+        width: 0% !important;
+    }
+
+
+
+}
