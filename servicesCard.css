@@ -1,0 +1,289 @@
+/* places to go */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+
+
+.services-cards-section {
+    padding: 80px 100px;
+    max-width: 1366px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: blue; */
+}
+
+
+.services-cards-section .text-content {
+    text-align: center;
+
+}
+
+.services-cards-section .text-content h4 {
+    font-family: "Dancing Script", cursive;
+    font-size: 28px;
+    text-transform: capitalize;
+    color: var(--brown);
+
+}
+
+.services-cards-section .text-content h1 {
+    font-size: 45px;
+    text-transform: capitalize;
+}
+
+
+
+
+
+
+.services-cards-section .cards-container {
+
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.services-cards-section .cards-container .card {
+    /* border: 2px solid; */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.2);
+    margin: auto;
+}
+
+.services-cards-section .cards-container .card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+
+
+.services-cards-section .cards-container .card .details-n-description {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    padding: 0 20px 20px;
+}
+
+
+
+.services-cards-section .cards-container .card .details-n-description h3 {
+    text-transform: uppercase;
+    font-weight: 500;
+    text-wrap: nowrap;
+}
+
+
+
+.services-cards-section .cards-container .card .details-n-description .price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    color: var(--brown);
+}
+
+
+.services-cards-section .cards-container .card .details-n-description .price i {
+    font-size: 24px;
+}
+
+.services-cards-section .cards-container .card .details-n-description .price h2 {
+    font-weight: 500;
+}
+
+
+.services-cards-section .cards-container .card .details-n-description .duration {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+}
+
+
+.services-cards-section .cards-container .card .details-n-description hr {
+    width: 100%;
+    border: 1px solid;
+    color: rgba(0, 0, 0, 0.132);
+}
+
+
+.services-cards-section .cards-container .card .details-n-description p {
+    font-size: 12px;
+}
+
+
+
+.services-cards-section .cards-container .card .details-n-description button {
+    width: 100%;
+    font-size: 18px;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    padding: 6px;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    background-color: var(--brown);
+    color: var(--white);
+
+}
+
+.services-cards-section .cards-container .card .details-n-description button i {
+    font-size: 22px;
+}
+
+
+
+
+
+
+.services-cards-section>.load-more {
+    font-size: 18px;
+    max-width: 200px;
+    margin-top: 40px;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    background-color: var(--brown);
+    color: white;
+    border-radius: 8px;
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1280px) {
+    .services-cards-section .cards-container {
+
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+    .services-cards-section .cards-container .card {
+        max-width: 400px;
+    }
+}
+
+@media screen and (max-width: 870px) {
+
+    .services-cards-section {
+        padding: 80px 50px;
+    }
+
+    .services-cards-section .cards-container .card img {
+        height: 150px;
+    }
+
+
+    .services-cards-section .cards-container .card .details-n-description {
+        gap: 10px;
+    }
+
+    .services-cards-section .cards-container .card .details-n-description h3 {
+        text-wrap: wrap;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+        overflow: hidden;
+    }
+
+    .services-cards-section .cards-container .card .details-n-description p {
+        text-wrap: wrap;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        overflow: hidden;
+    }
+}
+
+
+
+
+
+@media screen and (max-width: 634px) {
+    .services-cards-section .cards-container {
+        grid-template-columns: 1fr;
+    }
+
+
+
+    .services-cards-section {
+        padding: 80px 100px;
+    }
+
+    .services-cards-section .cards-container .card img {
+        height: 200px
+    }
+
+
+    .services-cards-section .cards-container .card .details-n-description {
+        gap: 10px;
+    }
+
+
+
+    .services-cards-section>.load-more {
+        display: block;
+    }
+
+    .card4,.card5,.card6{
+        display: none;
+    }
+}
+
+
+
+@media screen and (max-width: 490px) {
+
+    .services-cards-section .text-content h4 {
+        font-size: 20px;
+    }
+
+    .services-cards-section .text-content h1 {
+        font-size: 32px;
+    }
+
+    .services-cards-section {
+        padding: 80px 50px;
+    }
+
+    .services-cards-section .cards-container .card img {
+        height: 150px
+    }
+
+}
+
+
+
+@media screen and (max-width: 360px) {
+
+    .services-cards-section {
+        padding: 80px 20px;
+    }
+
+    .services-cards-section .cards-container .card .details-n-description button {
+        font-size: 16px;
+    }
+
+    .services-cards-section .cards-container .card .details-n-description button i {
+        font-size: 18px;
+    }
+
+
+}
