@@ -20,3 +20,5 @@
 <img src="./screenshots/screenshot6.png">
 
 <img src="./screenshots/screenshot7.png">
+
+<img src="./screenshots/screenshot8.png">
