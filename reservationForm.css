@@ -1,0 +1,117 @@
+
+.reservation{
+    padding: 80px 100px;
+    max-width: 1366px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+
+    background-image: url(assets/compas.png);
+    background-repeat: no-repeat;
+    background-position: 120% ;
+    background-size: 400px;
+}
+
+
+.reservation .text-content {
+    text-align: center;
+
+}
+
+.reservation .text-content>h4 {
+    font-family: "Dancing Script", cursive;
+    font-size: 28px;
+    text-transform: capitalize;
+    color: var(--brown);
+
+}
+
+.reservation .text-content>h1 {
+    font-size: 45px;
+    text-transform: capitalize;
+}
+
+
+
+
+.reservation form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.reservation form div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.reservation form div input{
+    width: 300px;
+    height: 50px;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+
+.reservation form .terms-and-conditions{
+    width: 100%;
+    display: flex;
+    gap: 16px;
+    text-wrap: nowrap;
+}
+
+.reservation button{
+    padding: 12px 20px;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: var(--brown);
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+
+
+
+
+@media screen and (max-width: 634px) {
+    .reservation form div{
+        flex-direction: column;
+    }
+}
+
+
+
+@media screen and (max-width: 490px) {
+    .reservation .text-content h4 {
+        font-size: 20px;
+    }
+
+    .reservation .text-content h1 {
+        font-size: 32px;
+    }
+    .reservation form .terms-and-conditions{
+        text-wrap: wrap;
+    }
+    
+
+}
+
+
+@media screen and (max-width: 370px) {
+
+    .reservation .text-content h1 {
+        font-size: 28px;
+    }
+
+    .reservation form div input{
+        width: 250px;
+    }
+
+}
