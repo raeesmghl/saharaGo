@@ -1,0 +1,123 @@
+
+.why-choose-us-section{
+    padding: 0px 100px 80px;
+    max-width: 1366px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    /* background-color: red; */
+}
+
+
+.why-choose-us-section .text-content {
+    text-align: center;
+
+}
+
+.why-choose-us-section .text-content>h4 {
+    font-family: "Dancing Script", cursive;
+    font-size: 28px;
+    text-transform: capitalize;
+    color: var(--brown);
+
+}
+
+.why-choose-us-section .text-content>h1 {
+    font-size: 45px;
+    text-transform: capitalize;
+}
+
+
+
+
+
+
+
+.why-choose-us-section .reasons-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 40px;
+}
+.why-choose-us-section .reasons-container .reason{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+
+}
+.why-choose-us-section .reasons-container .reason>img{
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+}
+
+
+
+.why-choose-us-section .reasons-container .reason .text{
+    text-align: center;
+
+}
+.why-choose-us-section .reasons-container .reason .text h4{
+    font-size: 14px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+}
+.why-choose-us-section .reasons-container .reason .text p{
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+
+
+@media screen and (max-width: 980px) {
+    .why-choose-us-section .reasons-container{
+        grid-template-columns: 1fr 1fr;
+        
+    }
+    .why-choose-us-section .reasons-container .reason{
+        max-width: 300px;
+    }
+}
+
+@media screen and (max-width: 634px) {
+    .why-choose-us-section{
+        padding: 0px 50px 80px; 
+    }
+    .why-choose-us-section .reasons-container{
+        grid-template-columns: 1fr;
+        
+    }
+    .why-choose-us-section .reasons-container .reason{
+        max-width: 300px;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .why-choose-us-section .text-content h4 {
+        font-size: 20px;
+    }
+
+    .why-choose-us-section .text-content h1 {
+        font-size: 32px;
+    }
+
+}
+
+
+@media screen and (max-width: 370px) {
+   
+
+    .why-choose-us-section .text-content h1 {
+        font-size: 28px;
+    }
+
+    .why-choose-us-section {
+        padding: 00px 10px 80px;
+    }
+}
