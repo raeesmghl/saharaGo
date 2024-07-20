@@ -1,0 +1,125 @@
+
+.about-tour-section{
+    padding: 80px 0px;
+    max-width: 1366px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+
+    background-image: url(assets/about-tours.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    color: white;
+}
+
+
+.about-tour-section .text-content {
+    text-align: center;
+
+}
+
+.about-tour-section .text-content>h4 {
+    font-family: "Dancing Script", cursive;
+    font-size: 28px;
+    text-transform: capitalize;
+
+}
+
+.about-tour-section .text-content>h1 {
+    font-size: 45px;
+    text-transform: capitalize;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    padding: 0 20px;
+}
+
+
+
+
+
+
+.about-tour-section .highlights-container{
+    padding: 0 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+
+}
+
+.about-tour-section .highlights-container .highlight{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+    max-width: 500px;
+}
+.about-tour-section .highlights-container .highlight h1{
+    font-size: 18px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+}
+
+.about-tour-section .highlights-container .highlight p{
+    font-size: 14px;
+}
+
+
+
+
+
+@media screen and (max-width: 870px) {
+    .about-tour-section .highlights-container{
+        padding: 0 50px;
+    }
+}
+
+
+
+
+@media screen and (max-width: 634px) {
+    .about-tour-section .highlights-container{
+        
+        grid-template-columns: 1fr;
+    
+    }
+    .about-tour-section .highlights-container .highlight{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+@media screen and (max-width: 490px) {
+    .about-tour-section .text-content h4 {
+        font-size: 20px;
+    }
+
+    .about-tour-section .text-content h1 {
+        font-size: 32px;
+    }
+
+}
+
+
+@media screen and (max-width: 370px) {
+   
+
+    .about-tour-section .text-content h1 {
+        font-size: 28px;
+    }
+
+}
