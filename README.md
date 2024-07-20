@@ -7,4 +7,4 @@
 
 ## screenshots : 
 
-<img src="screenshot1.jpg">
+<img src="screenshots/screenshot1.jpg">
