@@ -18,3 +18,5 @@
 <img src="./screenshots/screenshot5.png">
 
 <img src="./screenshots/screenshot6.png">
+
+<img src="./screenshots/screenshot7.png">
