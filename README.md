@@ -2,8 +2,11 @@
 
 
 
+
+
 # my project : 
 
+- fully responsive
 
 ## screenshots : 
 
