@@ -7,6 +7,9 @@
 # my project : 
 
 - fully responsive
+- each section's styles are written in different css file
+
+
 
 ## screenshots : 
 
