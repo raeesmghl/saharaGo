@@ -10,6 +10,7 @@
 - fully responsive
 - each section's styles are written in different css file
 
+The code is disorganized; this is the first time I've worked on a project of this kind using only HTML, CSS, and JavaScript without a framework.
 
 ## screenshots : 
 
