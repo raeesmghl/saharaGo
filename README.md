@@ -23,10 +23,10 @@ The code is disorganized; this is the first time I've worked on a project of thi
 
 <img src="./screenshots/screenshot4.png" width="300">
 
-<img src="./screenshots/screenshot5.png">
+<img src="./screenshots/screenshot5.png" width="300">
 
-<img src="./screenshots/screenshot6.png">
+<img src="./screenshots/screenshot6.png" width="300">
 
-<img src="./screenshots/screenshot7.png">
+<img src="./screenshots/screenshot7.png" width="300">
 
-<img src="./screenshots/screenshot8.png">
+<img src="./screenshots/screenshot8.png" width="300">
