@@ -21,7 +21,7 @@ The code is disorganized; this is the first time I've worked on a project of thi
 
 <img src="./screenshots/screenshot3.png" width="300">
 
-<img src="./screenshots/screenshot4.png">
+<img src="./screenshots/screenshot4.png" width="300">
 
 <img src="./screenshots/screenshot5.png">
 
