@@ -13,7 +13,7 @@
 
 The code is disorganized; this is the first time I've worked on a project of this kind using only HTML, CSS, and JavaScript without a framework.
 
-live : [saharago]()
+live : [saharago](https://saharago.netlify.app/)
 
 ## screenshots : 
 
